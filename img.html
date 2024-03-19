@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>image-gallery</title>
+        <meta name="viewport" content="width=device-width , initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css"/>
+    </head>
+    <body>
+        <div class="product">
+            <div class="small-img">
+                <img src="./img/images (1).jpg" onclick="myfunction(this)">
+                <img src="./img/images (2).jpg" onclick="myfunction(this)">
+                <img src="./img/images (3).jpg" onclick="myfunction(this)">
+                <img src="./img/images (5).jpg" onclick="myfunction(this)">
+                <img src="./img/images (7).jpg" onclick="myfunction(this)">
+            </div>
+            <div class="container-img">
+                <img id="imagbox" src="./img/images.jpg">
+            </div>
+        </div>
+
+        <script>
+            function myfunction(smallimg){
+                var fullimg=document.getElementById("imagbox");
+                fullimg.src= smallimg.src ;
+            }
+        </script>
+    </body>
+</html>
